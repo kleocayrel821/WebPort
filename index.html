@@ -1,241 +1,389 @@
-
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
-</head>
-<body>
-    <header class="navbar bg-primary text-primary-content shadow-lg sticky top-0 z-50">
-        <div class="navbar-start">
-            <h2 class="text-xl font-bold"><a href="#home" class="btn btn-ghost normal-case text-xl">Clay</a></h2>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kleo | IT Support & Hardware Enthusiast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <header class="top-bar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-dot"></span>
+          Clayerzxs
         </div>
-        <div class="navbar-end">
-            <nav class="hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a href="#home" class="btn btn-ghost">Home</a></li>
-                    <li><a href="#about" class="btn btn-ghost">About</a></li>
-                    <li><a href="#skills" class="btn btn-ghost">Skills</a></li>
-                    <li><a href="#hobbies" class="btn btn-ghost">Hobbies</a></li>
-                    <li><a href="#project" class="btn btn-ghost">Project</a></li>
-                    <li><a href="#contact" class="btn btn-ghost">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="dropdown dropdown-end lg:hidden">
-                <label tabindex="0" class="btn btn-ghost">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base-content">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="main-content">
-
-        <section id="home" class="hero min-h-screen bg-gradient-to-br from-cyan-200 to-blue-300">
-            <div class="hero-content flex-col lg:flex-row-reverse max-w-6xl mx-auto py-16 px-4">
-                <div class="avatar">
-                    <div class="w-64 md:w-80 rounded-full ring ring-primary ring-offset-base-100 ring-offset-4 shadow-2xl animate-pulse">
-                        <img src="images/kleoimg.png" alt="Profile picture" class="mask mask-circle" />
-                    </div>
-                </div>
-                <div class="text-center lg:text-left lg:mr-8 max-w-md">
-                    <div class="badge badge-accent mb-4 p-3 font-semibold">Welcome to my portfolio</div>
-                    <h1 class="text-5xl font-bold text-primary-content mb-4">Marc Kleo C. Bonsol</h1>
-                    <h2 class="text-2xl py-6 text-primary-content opacity-90">Hi! I am a 3rd yr BSIT Student from Cavite State University Bacoor Campus</h2>
-                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
-                        <a href="#about" class="btn btn-primary">Learn More About Me</a>
-                        <a href="#contact" class="btn btn-outline btn-primary">Contact Me</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section py-16">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p class="text-lg">Hello! I'm Marc Kleo Bonsol, a BSIT student with a deep passion for hardware. While many in the IT field gravitate toward software,
-                     I find myself most excited by the world of electronics, networking, and embedded systems. During my Senior Highschool my strand was Electrical Installation and Maintenance under the strand of TVL.
-                     My journey began with a curiosity for how things work, leading me to explore microcontrollers, and the art of designing effective, reliable hardware.
-                     I love making DIYs and that challenges makes me want to transform concepts into physical systems that bring ideas to life.
-                     I'm driven by the thrill of bridging theory with tangible, real-world solutions.</p>
-            </div>
-        </section>
-
-        <section id="skills" class="skills-section py-16 bg-base-200">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-content">
-                <div class="skill-cards">
-                    <div class="skill-card">
-                        <div class="skill-icon html-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-12 h-12"><path fill="#E34F26" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
-                        </div>
-                        <h3 class="skill-name">HTML</h3>
-                        <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 90%;"></div>
-                        </div>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon css-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-12 h-12"><path fill="#1572B6" d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
-                        </div>
-                        <h3 class="skill-name">CSS</h3>
-                        <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 70%;"></div>
-                        </div>
-                        <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon python-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-12 h-12"><path fill="#3776AB" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
-                        </div>
-                        <h3 class="skill-name">Python</h3>
-                        <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 50%;"></div>
-                        </div>
-                        <span class="skill-percentage">50%</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon django-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-12 h-12"><path fill="#092E20" d="M356.9 64.3H280l-56 88.6-48-88.6H0L224 448 448 64.3h-91.1zm-301.2 32h53.8L224 294.5 338.4 96.3h53.8L224 384.5 55.7 96.3z"/></svg>
-                        </div>
-                        <h3 class="skill-name">Django</h3>
-                        <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 50%;"></div>
-                        </div>
-                        <span class="skill-percentage">50%</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="project" class="project-section py-16">
-            <h2 class="section-title">Some of the projects that I made</h2>
-            <div class="project-content">
-                <div class="project card bg-base-100 shadow-xl">
-                    <figure>
-                        <img src="images/obraimahe.jpg" alt="project 1" class="project-image">
-                    </figure>
-                    <div class="card-body">
-                        <h3 class="card-title">ObraImahe</h3>
-                        <p>One of my projects that I made was ObraImahe, a platform for artists to showcase their artworks.</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">View Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="hobbies" class="hobbies-section py-16">
-            <h2 class="section-title">Things I Do During Free Time</h2>
-            <div class="hobbies-content">
-                <div class="hobby card bg-base-100 shadow-xl">
-                    <figure>
-                        <img src="images/kdrama.jpg" alt="Hobby 1" class="hobby-image">
-                    </figure>
-                    <div class="card-body">
-                        <h3 class="card-title">Charcoal and Graphite art</h3>
-                        <p>Drawing is one of my favorite things to do.</p>
-                    </div>
-                </div>
-                <div class="hobby card bg-base-100 shadow-xl">
-                    <figure>
-                        <img src="images/diy.png" alt="Hobby 2" class="hobby-image">
-                    </figure>
-                    <div class="card-body">
-                        <h3 class="card-title">Do it yourself projects</h3>
-                        <p>I love creating DIY projects making the imagination bring to life.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="py-16 bg-base-200">
-            <div class="max-w-4xl mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-8 text-primary">Contact</h2>
-                <p class="text-center text-lg mb-8">If you're interested in working with me, feel free to reach out. I'm always open to new opportunities and collaborations.</p>
-                
-                <div class="card bg-base-100 shadow-xl">
-                    <div class="card-body">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div>
-                                <h3 class="text-2xl font-semibold mb-4">Send Me a Message</h3>
-                                <form id="contactForm" class="space-y-4">
-                                    <div class="form-control">
-                                        <label class="label">
-                                            <span class="label-text">Name</span>
-                                            <span class="label-text-alt text-error" id="nameError"></span>
-                                        </label>
-                                        <input type="text" id="name" placeholder="Your Name" class="input input-bordered w-full" required />
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label">
-                                            <span class="label-text">Email</span>
-                                            <span class="label-text-alt text-error" id="emailError"></span>
-                                        </label>
-                                        <input type="email" id="email" placeholder="Your Email" class="input input-bordered w-full" required />
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label">
-                                            <span class="label-text">Message</span>
-                                            <span class="label-text-alt text-error" id="messageError"></span>
-                                        </label>
-                                        <textarea id="message" class="textarea textarea-bordered h-24" placeholder="Your Message" required></textarea>
-                                    </div>
-                                    <div class="form-control mt-6">
-                                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
-                                    </div>
-                                    <div id="formStatus" class="alert hidden mt-4"></div>
-                                </form>
-                            </div>
-                            
-                            <div>
-                                <h3 class="text-2xl font-semibold mb-4">Connect With Me</h3>
-                                <div class="flex justify-center gap-4 mb-6">
-                                    <a href="https://www.facebook.com/profile.php?id=61569802925565" target="_blank" class="btn btn-circle btn-primary">
-                                        <img src="images/facebook.png" alt="Facebook" class="w-6 h-6">
-                                    </a>
-                                    <a href="https://github.com/kleocayrel" target="_blank" class="btn btn-circle btn-primary">
-                                        <img src="images/github.png" alt="GitHub" class="w-6 h-6">
-                                    </a>
-                                    <a href="https://web.telegram.org/k/" target="_blank" class="btn btn-circle btn-primary">
-                                        <img src="images/telegram.png" alt="Telegram" class="w-6 h-6">
-                                    </a>
-                                </div>
-                                
-                                <div class="card bg-base-200 p-4">
-                                    <p class="mb-2"><strong>Email:</strong> <a href="mailto:kleocayrel0821@gmail.com" class="link link-primary">kleocayrel0821@gmail.com</a></p>
-                                    <p><strong>Address:</strong> Pasong Buaya II Imus, Cavite</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer footer-center p-4 bg-primary text-primary-content">
+    <section class="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-bg-glow2"></div>
+      <div class="container hero-inner">
         <div>
-            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+          <div class="hero-label">BSIT Portfolio · 2026</div>
+          <h1 class="headline">
+            IT Support &amp;<br>
+            <em>Hardware &amp; Prototyping</em><br>
+            Enthusiast
+          </h1>
+          <p class="hero-sub">
+            Hands-on experience in user support, OS imaging, networking fundamentals,
+            microcontroller prototyping, and clean web &amp; multimedia design.
+          </p>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost"  href="#contact">Get in Touch</a>
+          </div>
         </div>
+        <div class="hero-aside">
+          <div class="aside-label">Focus Areas</div>
+          <div class="aside-title">Practical IT support, hardware builds &amp; clean interfaces.</div>
+          <p class="aside-desc">
+            Supporting users, imaging systems, assembling electronics prototypes,
+            and documenting everything with clarity.
+          </p>
+          <div class="aside-tags">
+            <span class="tag">IT Support</span>
+            <span class="tag">Networking</span>
+            <span class="tag">Prototyping</span>
+            <span class="tag">Web Basics</span>
+            <span class="tag">Multimedia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">05 /</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card hover-card card-hw">
+            <div class="project-body">
+              <div class="card-icon">⚙️</div>
+              <span class="project-tag">Hardware</span>
+              <h3>Hardware &amp; Prototyping Highlights</h3>
+              <div class="hover-details">
+                <p>Breadboard wiring, servo control, power management basics, enclosure planning, Arduino IDE usage, and serial debugging with non-blocking loops.</p>
+                <br>
+                <p> Troubleshooting hardware issues on computers, including diagnosing and fixing power supply problems, memory errors, and hardware malfunctions.</p>
+                <br>
+                <p>Assembling and disassembling computer components, such as CPU, motherboard, memory modules, and storage devices, to resolve hardware compatibility issues.</p>
+              </div>
+            </div>
+          </article>
+          <article class="project-card hover-card card-net">
+            <div class="project-body">
+              <div class="card-icon">🌐</div>
+              <span class="project-tag">Networking</span>
+              <h3>Networking Highlights</h3>
+              <div class="hover-details">
+                <p>Configured LAN IP addressing, used ipconfig/ifconfig, performed ping and traceroute, basic router/switch setup, cable checks, and device connectivity troubleshooting.</p>
+                <br>
+                <p>Reconfigured a legacy router as a Soft Access Point (AP) to extend wireless coverage while maintaining a single subnet architecture. Disabled DHCP/NAT on the secondary router, implemented LAN-to-LAN bridging, assigned static IP within the primary network range, and optimized channel selection to minimize interference and avoid double NAT issues.</p>              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">01 /</span>
+          <h2 class="section-title">About</h2>
+        </div>
+        <div class="about-grid">
+          <div class="avatar-wrap">
+            <img class="avatar" alt="Clay avatar" src="./images/photo.jpg" />
+          </div>
+          <div class="about-body">
+            <p class="about-text">
+              I am Marc Kleo Cayrel Bonsol an IT support and hardware prototyping enthusiast with a focus on
+              troubleshooting, OS installation, and basic networking setups. My projects
+              include electronics prototyping with microcontrollers,
+              and early-stage web and multimedia work that balances usability with
+              clean visual structure.
+            </p>
+            <div class="about-stats">
+              <div>
+                <div class="stat-num">4+</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div>
+                <div class="stat-num">4th</div>
+                <div class="stat-label">Year Student</div>
+              </div>
+              <div>
+                <div class="stat-num">2026</div>
+                <div class="stat-label">Expected Grad.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">02 /</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon">🖥</div>
+            <div class="skill-title">IT Support &amp; Systems</div>
+            <div class="skill-meta">Hands-on</div>
+            <div class="bar"><span class="level-hands-on"></span></div>
+            <div class="skill-tools">Windows setup · Troubleshooting · OS imaging</div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <div class="skill-title">Networking</div>
+            <div class="skill-meta">Basic</div>
+            <div class="bar"><span class="level-basic"></span></div>
+            <div class="skill-tools">LAN setup · IP configuration · Device checks</div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">⚙️</div>
+            <div class="skill-title">Hardware &amp; Prototyping</div>
+            <div class="skill-meta">Hands-on</div>
+            <div class="bar"><span class="level-hands-on"></span></div>
+            <div class="skill-tools">Microcontrollers · Sensors · Wiring &amp; enclosures</div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <div class="skill-title">Web &amp; Multimedia</div>
+            <div class="skill-meta">Familiar</div>
+            <div class="bar"><span class="level-familiar"></span></div>
+            <div class="skill-tools">HTML · CSS · Django · Canva · Microsoft Office</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">03 /</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card hover-card card-iot">
+            <img class="project-img" alt="IoT pet feeder" src="./images/petio.png" />
+            <div class="project-body">
+              <div class="card-icon">🐾</div>
+              <span class="project-tag">Capstone · IoT</span>
+              <h3>PETio an Automatic Pet Feeder</h3>
+              <div class="hover-details">
+                <p>Hardware prototype paired with a web interface for timed feeding, status checks, and manual control via microcontroller.</p>
+              </div>
+              <button class="btn btn-ghost view-image-btn" type="button">View Image</button>
+            </div>
+          </article>
+
+          <!-- <article class="project-card">
+            <img class="project-img" alt="Electronics prototyping" src="./images/petio1.png" />
+            <div class="project-body">
+              <span class="project-tag">Electronics</span>
+              <h3>Electronics &amp; Prototyping</h3>
+              <details>
+                <summary>View Details</summary>
+                <p>Microcontroller builds with sensor data logging, wiring diagrams, and enclosure planning for clean end results.</p>
+              </details>
+              <button class="btn btn-ghost view-image-btn" type="button">View Image</button>
+            </div>
+          </article> -->
+
+          <article class="project-card hover-card card-media">
+            <img class="project-img" alt="Multimedia project" src="./images/image.png" />
+            <div class="project-body">
+              <div class="card-icon">🎨</div>
+              <span class="project-tag">Multimedia</span>
+              <h3>Multimedia Projects</h3>
+              <div class="hover-details">
+                <p>Vexel posters, Canva layouts, and multimedia compositions with a focus on strong contrast and visual hierarchy.</p>
+              </div>
+              <button class="btn btn-ghost view-image-btn" type="button">View Image</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">04 /</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="education-card">
+          <div>
+            <div class="edu-degree">Bachelor of Science in Information Technology</div>
+            <div class="edu-meta">
+              <span>Cavite State University - Bacoor Campus Branch</span>
+              <span>Concentration: Web Development, Hardware, Networking &amp; Multimedia</span>
+            </div>
+          </div>
+          <div class="edu-badge">
+            <div class="edu-badge-year">2021 - 2026</div>
+            <div class="edu-badge-label">Expected</div>
+          </div>
+        </div>
+        <div class="education-card no-mark">
+          <div>
+            <div class="edu-degree">Senior High School</div>
+            <div class="edu-meta">
+              <span>General Juan Castañeda Senior High School — Imus, Cavite</span>
+            </div>
+          </div>
+          <div class="edu-badge">
+            <div class="edu-badge-year">2018-2020</div>
+            <div class="edu-badge-label">Completed</div>
+          </div>
+        </div>
+
+        <div class="education-card no-mark">
+          <div>
+            <div class="edu-degree">Junior Highschool</div>
+            <div class="edu-meta">
+              <span>General Licerio Topacio National Highschool — Imus, Cavite</span>
+            </div>
+          </div>
+          <div class="edu-badge">
+            <div class="edu-badge-year">2016-2018</div>
+            <div class="edu-badge-label">Completed</div>
+          </div>
+        </div>
+        <div class="education-card no-mark">
+          <div>
+            <div class="edu-degree"> Junior Highschool</div>
+            <div class="edu-meta">
+              <span>Bukal Sur national Highschool — Cadelaria, Quezon</span>
+            </div>
+          </div>
+          <div class="edu-badge">
+            <div class="edu-badge-year">2014-2016</div>
+            <div class="edu-badge-label">Completed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">06 /</span>
+          <h2 class="section-title">Contact</h2>
+        </div>
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <ul class="messages" id="messages"></ul>
+            <form class="contact-form" id="contactForm" action="#">
+              <div class="form-group">
+                <label class="form-label" for="contact_name">Name</label>
+                <input id="contact_name" type="text" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact_email">Email</label>
+                <input id="contact_email" type="email" name="email" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact_message">Message</label>
+                <textarea id="contact_message" name="message" placeholder="What would you like to discuss?" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send Message →</button>
+            </form>
+          </div>
+
+          <div class="info-card">
+            <div>
+              <div class="info-heading">Direct Contact</div>
+              <div class="contact-row">
+                <div class="contact-item">
+                  <div class="contact-item-icon">✉</div>
+                  kleocayrel0821@gmail.com
+                </div>
+                <div class="contact-item">
+                  <div class="contact-item-icon">📞</div>
+                  +63 916 998 6811 
+                </div>
+                <div class="contact-item">
+                  <div class="contact-item-icon">📍</div>
+                  Imus, Cavite
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="info-heading">Links</div>
+              <div class="link-row">
+                <a class="ext-link" href="https://github.com/kleocayrel821" target="_blank" rel="noopener noreferrer">
+                  GitHub <span class="ext-link-arrow">↗</span>
+                </a>
+                <a class="ext-link" href="https://www.linkedin.com/in/marc-kleo-bonsol-56716039a/" target="_blank" rel="noopener noreferrer">
+                  LinkedIn <span class="ext-link-arrow">↗</span>
+                </a>
+                <a class="ext-link" href="#contact">
+                  Portfolio File <span class="ext-link-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-inner">
+        <span class="footer-brand">Marc Kleo C. Bonsol</span>
+        <span>© 2026 · All rights reserved</span>
+        <span>BSIT · IT Support &amp; Hardware Enthusiast</span>
+      </div>
     </footer>
-</body>
+
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+      <div class="image-modal-content">
+        <button class="image-modal-close" type="button" aria-label="Close">×</button>
+        <img alt="Project image" id="imageModalImg" />
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
