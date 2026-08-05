@@ -55,10 +55,11 @@
   var form = document.getElementById("contactForm");
   var messagesEl = document.getElementById("messages");
 
-  function addMessage(text) {
+  function addMessage(text, type) {
     if (!messagesEl) return;
     var li = document.createElement("li");
     li.textContent = text;
+    li.className = type || "";
     messagesEl.innerHTML = "";
     messagesEl.appendChild(li);
   }
@@ -74,9 +75,15 @@
       var email = document.getElementById("contact_email").value.trim();
       var message = document.getElementById("contact_message").value.trim();
       if (!name || !email || !message) {
-        addMessage("Please fill out all fields.");
+        addMessage("Please fill out all fields.", "error");
         return;
       }
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        addMessage("Please enter a valid email address.", "error");
+        return;
+      }
+
       var subject = "Portfolio Contact from " + name;
       var body = "Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message;
       var mailto = "mailto:kleocayrel0821@gmail.com"
@@ -86,9 +93,11 @@
         + "&to=" + encodeURIComponent("kleocayrel0821@gmail.com")
         + "&su=" + encodeURIComponent(subject)
         + "&body=" + encodeURIComponent(body);
+
       var win = window.open(gmail, "_blank");
       if (!win) window.location.href = mailto;
-      addMessage("Message prepared in Gmail (new tab) or your email client.");
+
+      addMessage("Message prepared successfully. Your email client or Gmail tab is ready.", "success");
       form.reset();
     });
   }
